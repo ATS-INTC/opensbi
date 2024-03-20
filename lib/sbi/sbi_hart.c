@@ -805,7 +805,7 @@ sbi_hart_switch_mode(unsigned long arg0, unsigned long arg1,
 		}
 	}
 
-	sbi_printf("sbi_hart_switch_mode 0x%lx 0x%lx 0x%lx 0x%lx\n", next_addr, next_mode, arg0, arg1);
+	// sbi_printf("sbi_hart_switch_mode 0x%lx 0x%lx 0x%lx 0x%lx\n", next_addr, next_mode, arg0, arg1);
 
 	register unsigned long a0 asm("a0") = arg0;
 	register unsigned long a1 asm("a1") = arg1;
