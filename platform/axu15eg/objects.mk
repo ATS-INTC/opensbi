@@ -45,7 +45,6 @@ platform-objs-y += platform.o
 FW_TEXT_START=0x80000000
 
 # Optional parameter for path to external FDT
-FW_FDT_PATH=
 
 #
 # Dynamic firmware configuration.
@@ -83,5 +82,6 @@ else
 FW_PAYLOAD_OFFSET=0x200000
 endif
 
+FW_FDT_PATH=
+FW_PAYLOAD_PATH=
 FW_PAYLOAD_FDT_ADDR=
-FW_PAYLOAD_PATH=../target/riscv64gc-unknown-none-elf/release/axinet.bin
